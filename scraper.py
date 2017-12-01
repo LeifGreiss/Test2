@@ -4,7 +4,7 @@ import lxml.html
 root = lxml.html.fromstring(html)#turnourHTMLintoanlxmlobject 
 trs = root.cssselect('tr')#getallthe<tdtags
 for tr in trs:
-    print tr.text_content
+    print tr.text_content()
 for tr in trs:
     record = { "tr" : tr.text_content() } # column name and value try:
     scraperwiki.sqlite.save(["tr"], record)
