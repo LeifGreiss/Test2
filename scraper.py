@@ -1,7 +1,7 @@
 import scraperwiki
 html = scraperwiki.scrape('http://www.maidencreek.net/')
 print html
-top = 2
-print top
-top = top + 1
-print top
+x = ['Carol', 'Rui', 'Brian', 'Fatimah']
+print x
+food = {"ham" : "yes", "egg" : "yes", "spam" : "no" }
+print food
