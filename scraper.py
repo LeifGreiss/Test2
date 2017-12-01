@@ -1,7 +1,11 @@
 import scraperwiki
-#html = scraperwiki.scrape('http://www.maidencreek.net/')
-#print html
-x = ['Carol', 'Rui', 'Brian', 'Fatimah']
-print x[1]
-food = {"ham" : "yes", "egg" : "yes", "spam" : "no" }
-print food["ham"]
+html = scraperwiki.scrape('http://inmo.ie/6022')
+print "Click on the ...more link to see the whole page"
+print html
+
+#import lxml.html
+#root = lxml.html.fromstring(html) # turn our HTML into an lxml object
+#tds = root.cssselect('td') # get all the <td> tags
+#for td in tds:
+    #print lxml.html.tostring(td) # the full HTML tag
+    #print td.text                # just the text inside the HTML tag
