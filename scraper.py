@@ -1,5 +1,5 @@
 import scraperwiki
-html = scraperwiki.scrape('http://www.opensecrets.org')
+html = scraperwiki.scrape('https://www.w3schools.com')
 print html
 sausages = html
 print sausages
