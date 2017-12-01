@@ -1,8 +1,8 @@
 import scraperwiki
 html = scraperwiki.scrape('http://inmo.ie/6022')
 importlxml.html 
-root=lxml.html.fromstring(html)#turnourHTMLintoanlxmlobject 
-tds=root.cssselect('td')#getallthe<tdtags
+root = lxml.html.fromstring(html)#turnourHTMLintoanlxmlobject 
+tds = root.cssselect('td')#getallthe<tdtags
 for td in tds:
     record = { "td" : td.text } # column name and value try:
     try:
