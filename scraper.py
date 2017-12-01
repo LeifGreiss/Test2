@@ -15,5 +15,5 @@ for td in tds:
     try: 
         scraperwiki.sqlite.save(["td"], record)
     except:
-        record = {"td" : "NO ENTRY"}
+        record = {"td" : "NO ENTRY" }
         scraperwiki.sqlite.save(["td"], record)
