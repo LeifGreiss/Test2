@@ -1,6 +1,6 @@
 import scraperwiki
 html = scraperwiki.scrape('http://inmo.ie/6022')
-importlxml.html 
+import lxml.html 
 root = lxml.html.fromstring(html)#turnourHTMLintoanlxmlobject 
 tds = root.cssselect('td')#getallthe<tdtags
 for td in tds:
