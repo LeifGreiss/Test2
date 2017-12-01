@@ -3,7 +3,7 @@ html = scraperwiki.scrape('http://inmo.ie/6022')
 import lxml.html
 root = lxml.html.fromstring(html) # turn our HTML into an lxml object
 tds = root.cssselect('tr') # get all the <td> tags
-for td in tds:
+for tr in trs:
     record = { "tr" : tr.text } # column name and values
     try: 
         scraperwiki.sqlite.save(["tr"], record)
