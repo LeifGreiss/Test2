@@ -1,7 +1,5 @@
 import scraperwiki
-html = scraperwiki.scrape('https://www.warnerbros.com/archive/spacejam/movie/jam.htm')
+html = scraperwiki.scrape('http://www.maidencreek.net/')
 print html
-sausages = html
-print sausages
 top = 2
 print top
