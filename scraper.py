@@ -3,6 +3,7 @@ html = scraperwiki.scrape('http://inmo.ie/6022')
 import lxml.html 
 root = lxml.html.fromstring(html)#turnourHTMLintoanlxmlobject 
 tds = root.cssselect('td')#getallthe<tdtags
+    print td.text
 for td in tds:
     record = { "td" : td.text_content() } # column name and value try:
     try:
