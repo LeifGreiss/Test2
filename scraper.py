@@ -1,7 +1,6 @@
 import scraperwiki
 html = scraperwiki.scrape('http://inmo.ie/6022')
 print "Click on the ...more link to see the whole page"
-print html
 
 import lxml.html
 root = lxml.html.fromstring(html) # turn our HTML into an lxml object
