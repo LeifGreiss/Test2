@@ -1,5 +1,5 @@
 import scraperwiki
-clown = scraperwiki.scrape('https://www.opensecrets.org')
-print clown
-sausages = clown
+html = scraperwiki.scrape('https://www.opensecrets.org')
+print html
+sausages = html
 print sausages
