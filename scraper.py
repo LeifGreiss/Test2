@@ -1,12 +1,11 @@
 import scraperwiki
 html = scraperwiki.scrape('http://inmo.ie/6022')
-import lxml.html
-root = lxml.html.fromstring(html) # turn our HTML into an lxml object
-tds = root.cssselect('tr') # get all the <td> tags
-for tr in trs:
-    record = { "tr" : tr.text } # column name and values
-    try: 
-        scraperwiki.sqlite.save(["tr"], record)
+importlxml.html 
+root=lxml.html.fromstring(html)#turnourHTMLintoanlxmlobject tds=root.cssselect('td')#getallthe<tdtags
+for td in tds:
+    record = { "td" : td.text } # column name and value try:
+    try:
+        scraperwiki.sqlite.save(["td"], record) # save the records one by one 
     except:
-        record = {"tr" : "NO ENTRY" }
-        scraperwiki.sqlite.save(["td"], record)
+        record = { "td" : "NO ENTRY" } # column name and value 
+        scraperwiki.sqlite.save(["td"], record) # save the records one by one
