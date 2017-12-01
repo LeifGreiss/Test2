@@ -2,12 +2,12 @@ import scraperwiki
 html = scraperwiki.scrape('http://inmo.ie/6022')
 import lxml.html 
 root = lxml.html.fromstring(html)#turnourHTMLintoanlxmlobject 
-tds = root.cssselect('td')#getallthe<tdtags
-for td in tds:
-    print td.text_content
-for td in tds:
-    record = { "td" : td.text_content() } # column name and value try:
-    scraperwiki.sqlite.save(["td"], record)
+trs = root.cssselect('tr')#getallthe<tdtags
+for tr in trs:
+    print tr.text_content
+for tr in trs:
+    record = { "tr" : tr.text_content() } # column name and value try:
+    scraperwiki.sqlite.save(["tr"], record)
     #try:
         #scraperwiki.sqlite.save(["td"], record) # save the records one by one 
     #except:
